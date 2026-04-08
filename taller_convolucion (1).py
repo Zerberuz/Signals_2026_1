@@ -83,7 +83,7 @@ t_max   = t[np.argmax(y)]
 t_start = t[np.where(y > 1e-6)[0][0]]  if np.any(y > 1e-6)  else None
 t_end   = t[np.where(y > 1e-6)[0][-1]] if np.any(y > 1e-6)  else None
 # ── Animación
-idx = np.arange(0, len(t), 5)
+idx = np.arange(0, len(t), 8)
 def animar(i):
     k = idx[i]
     ti = t[k]
